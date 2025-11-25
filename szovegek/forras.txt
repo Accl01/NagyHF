@@ -1,0 +1,2 @@
+Színes print:
+https://stackoverflow.com/questions/29556907/changing-one-words-color-in-linux-terminal-putty

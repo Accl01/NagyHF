@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug C program",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/Users/woynarovichgergely/NagyHF/main",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "/Users/woynarovichgergely/NagyHF",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "lldb",
+      "preLaunchTask": "build C program"
+    }
+  ]
+}
