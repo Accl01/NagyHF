@@ -58,6 +58,5 @@ int main(void){
                 continue;
         }
     } while(valasztas != 'q');
-
     return 0;
 }
