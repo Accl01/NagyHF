@@ -1,2 +1,1 @@
-Gergő 200
-Mr_Béna 1
+Mr_Béna -1

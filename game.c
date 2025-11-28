@@ -41,23 +41,23 @@ void hajolerakas(JATEKOS *player, char *input, bool *kilep){
                 //Atalakitjukj a bemenetet es elnevezzuk hogy hasznallhato legyen.
                 int sor = toupper((unsigned char)input[0]) - 'A';
                 int oszlop = input[1] - '0';
-                char irany = tolower((unsigned char)input[2]);
+                char irany = toupper((unsigned char)input[2]);
                 //Ezek utan elkezdjuk ellenorizni hogy hejes bemenet e.
 
                 //Ellenorizzuk hogy csak 3 karakter a bemenet (+ \0).
                 if(strlen(input) != 3){
-                    printf("Hibás bemenet, próbáld újra (PL.: A1l) \n");
+                    printf("Hibás bemenet, próbáld újra (PL.: A1L) \n");
                     continue;
                 }
 
                 //Ellenorizuk hogy a megadott bemenetek a tablan belulre esnek.
-                if(sor < 0 || sor >= PLAY_SIZE || oszlop < 0 || oszlop >= PLAY_SIZE || (irany != 'l' && irany != 'o')){
-                    printf("Hibás bemenet, próbáld újra (PL.: A1l) \n");
+                if(sor < 0 || sor >= PLAY_SIZE || oszlop < 0 || oszlop >= PLAY_SIZE || (irany != 'L' && irany != 'O')){
+                    printf("Hibás bemenet, próbáld újra (PL.: A1L) \n");
                     continue;
                 }
 
                 // Ellenorizzuk hogy a bemenet minden resze belefer e a tablaba (a hajok vege nem log e ki a tablabol).
-                if((irany == 'o' && sor + h - 1 >= PLAY_SIZE) || (irany == 'l' && oszlop + h - 1 >= PLAY_SIZE)){
+                if((irany == 'O' && sor + h - 1 >= PLAY_SIZE) || (irany == 'L' && oszlop + h - 1 >= PLAY_SIZE)){
                     printf("Kilóg a táblából, próbáld újra \n");
                     continue;
                 }
@@ -67,7 +67,7 @@ void hajolerakas(JATEKOS *player, char *input, bool *kilep){
                 for(int j = 0; j < h; j++){
                     int x = sor;
                     int y = oszlop;
-                    if(irany == 'o'){
+                    if(irany == 'O'){
                         x = sor + j;
                     }
                     else{
@@ -85,7 +85,7 @@ void hajolerakas(JATEKOS *player, char *input, bool *kilep){
 
                 //Ha mindennek megfeleltunk akkor feltoltjuk a tablat a hajoval.
                 for(int j = 0; j < h; j++){
-                    if(irany == 'o'){
+                    if(irany == 'O'){
                         player->tabla[sor + j][oszlop] = '#';
                     }
                     else{
