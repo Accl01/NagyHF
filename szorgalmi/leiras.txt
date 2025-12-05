@@ -1,3 +1,0 @@
-Torpedó
-
-A programom egy konzolban futó két játékosos torpedó játék. A játék célja, hogy elsüllyeszd az ellenfeled összes hajóit. A játékosok, miután lerakták a hajóikat, felváltva tippelnek addig amíg az egyik el nem süllyeszti a másik összes hajóját. A játék a nyertes nevét elmenti a dicsőséglistába, tehát ha mindig ugyanazzal a névvel játszik valaki, tudja növelni a nyeréseinek számát a listában. A dicsőséglistát egy txt-ből olvassa/ tárolja el.
